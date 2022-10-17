@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="https://tm-statweb.be/forms.php" method="get">
+  <div>
+    <label for="voornaam">Voornaam: <input type="text" name="voornaam" id="voornaam" required> </label>
+  </div>
+  <div>
+    <label for="familienaam">Familienaam: <input type="text" name="familienaam" id="familienaam" required ></label>
+  </div>
+  <div>
+    <label for="adres">Adres: <input type="text" name="adres" id="adres"> </label>
+  </div>
+  <div>
+    <label for="provincie">Provincie: 
+      <select name="provincie" id="provincie">
+      <option value="limburg">Limburg</option>
+      <option value="antwerpen">Antwerpen</option>
+      <option value="henegouwen">Henegouwen</option>
+      <option value="luik">Luik</option>
+      <option value="luxemburg">Luxemburg</option>
+      <option value="namen">Namen</option>
+      <option value="oostvlaanderen">Oost-Vlaanderen</option>
+      <option value="westvlaanderen">West-Vlaanderen</option>
+      <option value="waalsbrabant">Waals-Brabant</option>
+      </select>
+      </label>
+  </div>
+  <div>
+    <fieldset>
+      <legend>Geslacht</legend>
+      <label for="male">Man<input type="radio" name="gender" id="male"></label>
+      <label for="female">vrouw<input type="radio" name="gender" id="female"></label>
+      <label for="other">ander<input type="radio" name="gender" id="other"></label>
+    </fieldset>
+  </div>
+  <div>
+    Foto <input type="file" id="bestand" required>
+  </div>
+  <div>
+    <label for="Checkbox">Ik ga akkoord met de algemene voorwaarden<input type="checkbox" name="Checkbox" id="Checkbox"></label>
+  </div>
+  <div>
+    <input type="submit" value="Registreren">
+  </div>
+  </form>
+</body>
+</html>
